@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+}
+#Home {
+    width: 100%;
+    height: 100%;
+}
+#profilepic {
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}
+nav{
+    padding: 1rem;
+    background-color: black;
+
+}
+#navlinks{
+    text-align:end;
+    
+}
+#navlinks>a{
+    color:white;
+    text-decoration: none;
+    padding-left: 0.5rem;
+}
+nav>div{
+    color:white;
+}
+#Home{
+    text-align: center;
+    padding:3rem 0 3rem;
+}
+#Home>a{
+    text-decoration: none;
+    color: purple;
+    font-size: 1.5rem;
+    border: 0.2rem solid purple;
+    padding: 0.5rem;
+}
+#Home>a:hover{
+    background-color:purple;
+    color:white;
+}
+h3{
+    text-align: center;
+}
+#About{
+    padding: 0 20rem 0;
+    display:flex;
+}
+#About>div{
+    text-align: center;
+    letter-spacing: 2px;
+}
+#workhead{
+    padding-top: 3rem;
+
+}
+#Work{
+    display:flex;
+    padding: 0 5rem 0;
+}
+
+#Work>section{
+    flex:1;
+    border: 2px solid purple;
+}
+#Work>section:first-child{
+    margin-right: 20px;
+}
+#Work>section{
+    text-align: center;
+    padding: 1rem;
+}
+#Work>section>a{
+    text-decoration: none;
+    color: purple;
+    font-size: 1rem;
+    border: 0.1rem solid purple;
+}
+#Work>section>a:hover{
+    background-color:purple;
+    color:white;
+}
+

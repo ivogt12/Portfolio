@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah Vogt</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav>
+        <div>IV</div>
+        <div id="navlinks">
+            <a href="/">Home</a>
+            <a href="#About">About</a>
+            <a href="#Work">Work</a>
+            <a href="#Contact">Contact</a>
+            <a href="Software Developer Resume.pdf">Resume</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="Home">
+            <h1>Isaiah Vogt</h1>
+            <h3>Full Stack Software Engineer, Musician, and Student at CSUF</h3>
+            <a href="#Contact">Reach Out!</a>
+        </div>
+        <h3>About</h3>
+        <div id="About">
+            
+            <div>I am a full stack software engineer and musician who excels at 
+                simplifying problems, collaborating effectively with team members, 
+                and working under pressure to create seamless solutions. I love 
+                maximizing the artistic potential of applications by prioritizing 
+                the user experience. My experiences as a musician have taught me 
+                how to communicate well with others, which is my main priority when 
+                attacking a problem.
+            </div>
+            <img id="profilepic" src="linkedinprofile.jpg">
+        </div>
+        <h3 id="workhead">Work</h3>
+        <div id="Work">
+            <section id="col1">
+                <h4>MuseGig</h4>
+                <div>A new way to book musicians for custom gigs!</div>
+                <div>Node.js, MongoDB, Express, CSS</div>
+                <a href="https://musegig.herokuapp.com/" >Deployed App</a>
+            </section>
+            <section id="col2">
+                <h4>EduGrade</h4>
+                <div>EduGrade is a MERN-Stack Application that allows teachers to 
+                    create classes and upload grades. EduGrade aims to provide an intuitive
+                     site for both students and teachers.
+                </div>
+                <div>Node.js, MongoDB, Express, React, CSS</div>
+                <a href="https://aqueous-depths-00953.herokuapp.com/">Deployed App</a>
+            </section>
+        </div>
+        <div id="Contact">
+            <div class="container">
+                <div class="row">
+                  <div class="col align-self-center">
+                    <h3 class="text-center">Contact</h3>
+                    <!-- contact form -->
+                    <form id="myForm">
+                      <!-- name -->
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input
+                          type="name"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          placeholder="enter your name"
+                        />
+                      </div>
+          
+                      <!-- email -->
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="enter your email"
+                        />
+                      </div>
+          
+                      <!-- subject -->
+                      <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                          type="text"
+                          name="subject"
+                          class="form-control"
+                          id="subject"
+                          placeholder="enter email subject"
+                        />
+                      </div>
+          
+                      <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                      </div>
+          
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                </div>
+        </div>
+    </main>
+    <aside>Built and Designed By Isaiah Vogt</aside>
+    <script src="js/main.js" defer></script>
+    
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- API -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">      (function () {
+        emailjs.init("ls5Y-Xv9NRBKn-ucV");
+      })();
+    </script>
+    <script>
+        // listen to the form submission
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+  
+            const serviceID = "service_x9wc4gr";
+            const templateID = "template_a69rt3n";
+  
+            // send the email here
+            emailjs.sendForm(serviceID, templateID, this).then(
+              (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("SUCCESS!");
+              },
+              (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+              }
+            );
+          });
+      </script>
+  
+</body>
+</html>
