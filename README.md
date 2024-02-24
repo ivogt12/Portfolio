@@ -45,6 +45,8 @@ This app's wireframe was designed on canva.com. Here are the models for the init
 
 # Features
 
+  Refactor code using passing props instead of repeating functions.
+
   More projects from my github/portfolio will be added soon.
 
   The general UI/UX should be more polished(open-ended). The padding/margins for the about page are not completed as intended. The Contact form is not spaced and neat as intended.
