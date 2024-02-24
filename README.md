@@ -33,3 +33,4 @@ This app's wireframe was designed on canva.com. Here are the models for the init
 ![Home](https://github.com/ivogt12/Portfolio/assets/98562653/42ef0b1f-fcd2-40ae-85e8-0fcacf436b92)
 ![Home (1)](https://github.com/ivogt12/Portfolio/assets/98562653/a11996b2-a33e-47ef-a95b-60be863bf15b)
 ![Home (2)](https://github.com/ivogt12/Portfolio/assets/98562653/9f9adecc-41d0-4c39-a1fe-5803f169ccd9)
+![Home (3)](https://github.com/ivogt12/Portfolio/assets/98562653/0ba47751-549b-4896-bf77-fd359c73a053)
