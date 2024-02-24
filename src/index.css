@@ -1,3 +1,8 @@
+/* Font for homepage name */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+/* Font for homepage buttons */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Mada:wght@200..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,388 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* ******************************************************** NavBar ******************************************************** */
+
+.nav {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  padding: 2vh 5vw; /* Adjust padding for the navbar */
+  background-color: #333; /* Example background color */
+}
+
+/* Example CSS for Navbar Links */
+.nav a {
+  color: white; /* Example color for navbar links */
+  text-decoration: none; /* Remove default underline */
+  margin: 2vh 4vw; /* Add margin between each navbar link */
+  cursor: pointer; /* when cursor hovers over each link, it changes to pointer finger */
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.nav a:hover {
+  color: gray;
+}
+
+/* ******************************************************** HomePage ******************************************************** */
+
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 5vh;
+
+  /* width: 100%; */
+  height: 100%;
+  background-image: linear-gradient(to right, #494848, #F8F8FF);
+  /* margin: 20vh, 20vw; */
+  /* border: 2px solid rgb(211, 243, 243); */
+}
+
+.home_item {
+  flex-grow: 2;
+}
+
+.left_titles {
+}
+
+#home_title {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.15vw;
+  font-weight: 1000;
+  color: rgba(0, 15, 15, 0.905);
+  height: 5vh;
+}
+
+#home_subtitle {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 25px;
+  color: rgba(2, 32, 32, 0.905);
+  font-weight: 100;
+}
+
+.home_left_buttons {
+  display: flex;
+  height: 45%;
+  /* cross-axis becomes horizontal */
+  flex-direction: column;
+  /* align-items centers flex items along the cross axis of the flex container */
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5vh;
+  flex-grow: 0;
+
+}
+
+.home_l_butt {
+  flex-grow: 0;
+  width: 35%;
+  height: 4rem;
+  background-color: rgb(211, 243, 243);
+  color: rgba(2, 32, 32, 0.905);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-family: "Mada", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove underline */
+}
+
+#home_featured_projects_button:hover {
+  background-color: rgb(98, 168, 177);
+}
+
+#home_resume_button:hover {
+  background-color: rgb(98, 168, 177);
+
+}
+
+#home_featured_projects_button {
+  /* margin-bottom: 5vh; */
+}
+
+.headshot {
+  padding-top: 5vh;
+  flex-grow: 1;
+  /* padding-right: 5vw; */
+}
+
+#home_headshot {
+  width: 25vw;
+  margin: auto;
+  height: auto; /* maintains aspect ratio */
+/* Block-level elements typically start on a new line and occupy the full width available to them within their containing parent element.
+As opposed to inline elements which do not start on a new line and only occupy as much width as necessary. */
+  display: block;
+  /* margin: 0 auto; */
+  border: px solid lightblue; /*Initially make border transparent */
+  border-radius: 50%; /* Used to make oval shape */
+  
+}
+
+.home_icons {
+  width: 4vw;
+  height: auto;
+}
+
+.right {
+  flex-grow: 0.75;
+  display: flex;
+  /* height: 45%; */
+  /* cross-axis becomes horizontal */
+  flex-direction: column;
+  /* align-items centers flex items along the cross axis of the flex container */
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 4vw;
+}
+
+#home_linkedin_icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#home_github_icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#home_gmail_icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+/********************************************************* Home Featured Projects Section *********************************************************/
+.featured_projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home_second_title {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.15vw;
+  font-weight: 1000;
+  color: rgba(0, 15, 15, 0.905);
+}
+
+.featured-project {
+  padding: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.project-info {
+  text-align: left;
+  width: 30%;
+}
+
+.project-info a:hover {
+  color: black;
+}
+
+.project-image {
+  width: 30%;
+  height: auto;
+  padding-right: 5vw;
+}
+
+.feat_proj_wf {
+  width: 25vw;
+  height: auto;
+}
+
+.feat_proj_titles {
+  font-family: 'Red Hat Text', sans-serif;
+  color: rgb(98, 168, 177);
+}
+
+.project_info_bottom {
+  padding-top: 2vh;
+}
+
+.feat_proj_skills {
+  padding-bottom: 2vh;
+}
+
+.feat_proj_github_links {
+  text-decoration: none;
+  color: rgb(98, 168, 177);
+}
+
+.feat_proj_bottom {
+  margin-bottom: 10vh;
+}
+
+/********************************************************* Footer *********************************************************/
+
+footer {
+  height: 100%;
+  background-image: linear-gradient(to right, #494848, #F8F8FF);
+}
+
+.footer_navBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh;
+}
+
+.footer_links {
+  margin-bottom: 5vh;
+  font-family: "Mada", sans-serif;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: rgb(9, 135, 151);
+}
+
+.footer_navBar a:hover {
+  color: black;
+}
+
+.footer_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+  /* width: 100%; */
+}
+
+.footer_icon {
+  width: 4vw;
+  height: auto;
+
+}
+
+#footer_github_icons {
+  padding: 1vw;
+}
+
+#footer_linkedin_icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#footer_github_icons:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#footer_gmail_icons:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/********************************************************* About *********************************************************/
+
+.about {
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.about_title1, .about_title2, .about_title3 {
+  font-family: 'Red Hat Text', sans-serif;
+  letter-spacing: 0.15vw;
+  font-weight: 1000;
+  color: rgb(98, 168, 177);
+  height: 5vh;
+}
+
+.about_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about_left {
+  text-align: left;
+}
+
+.left_top {
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 5vh;
+}
+
+.right_bottom, .right_top {
+  margin-top: 4vh;
+}
+
+/********************************************************* Contact *********************************************************/
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+.contact_left {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between left and right sections */
+}
+
+.contact_left form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_left div {
+  margin-bottom: 15px; /* Adjust spacing between inputs */
+  display: block
+}
+
+.contact_left label {
+  margin-bottom: 5px;
+}
+
+.contact_left input,
+.contact_left textarea {
+  border: none;
+  border-bottom: 1px solid #000; /* Replace input box with a line */
+  padding-bottom: 5px; /* Optional: Add padding to align text with line */
+}
+
+.contact_right {
+  flex: 1;
+}
+
+.contact_right p {
+  margin-bottom: 10px; /* Adjust spacing between contact details */
+  text-align: right;
+}
+
+.contactButtonContainer {
+  text-align: center;
+}
+
+.contactButton {
+  width: 35%;
+  height: 4rem;
+  background-color: rgb(211, 243, 243);
+  color: rgba(2, 32, 32, 0.905);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  font-family: "Mada", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.15vw;
+  text-decoration: none;
 }
