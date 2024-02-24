@@ -41,6 +41,8 @@ This app's wireframe was designed on canva.com. Here are the models for the init
 
   The footer home button is not properly routed.
 
+  The Submition button in the contact form is functional but not responsive visually.
+
 # Features
 
   More projects from my github/portfolio will be added soon.
