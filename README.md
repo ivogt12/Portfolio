@@ -1,9 +1,9 @@
 # Welcome to my Portfolio
 
-Built by
-Isaiah Vogt
-CWID 885972638
-ivogt@csu.fullerton.edu
+Built by 
+Isaiah Vogt 
+CWID 885972638 
+ivogt@csu.fullerton.edu 
 
 ## Scripts
 
