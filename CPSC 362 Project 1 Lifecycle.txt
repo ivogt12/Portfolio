@@ -1,0 +1,60 @@
+Project Plan
+Start Date: 2/12 => Due Date: 2/24
+
+Model: Modified-Agile
+
+Sprint 1
+2/12 => 2/15
+Goals:
+- Browse Portfolio Sites for Inspiration
+- Create Wireframe in canva
+- Work on general needs and Goals for success
+
+Completion: 100%
+- complete WF and became more experienced in Canva
+
+
+
+Sprint 2
+2/15 => 2/18
+Goals:
+- create and scaffold React App
+- Create App, Home, About, Contact, and Projects folders in src folder
+- program routing for linking to each page
+- research email.js API and begin implementation
+
+Completion: ~60%
+- ran into time-conflicts due to other commitments
+- did not research email.jAPI
+- delegate work for next sprint
+
+
+
+
+Sprint 3
+2/18 => 2/21
+Goals:
+- Finish email.js implementation
+- Finish programming HTML elements based on wireframe
+  - Finish elements for Home, About, Contact, and Portfolio Page
+- Implement downloadable Resume Link
+
+Completion ~75%
+- email.js implementation is problematic. Public key is not being recognized
+  - use MongoDB instead
+- Shift site into Full Stack, MERN project for contact form post requests
+- finished HTML programming
+
+
+
+
+Sprint 4
+2/21 => 2/23
+Goals:
+- Implement backend in Express and configure and implement MongoDB
+  - install mongoose as an ORM due to not being familiar with MongoDB query language
+- Program styling with CSS for icons, implementation of styles in wireframe for a nice presentation
+- Configure contact form to post data to database
+
+Completion ~100%
+
